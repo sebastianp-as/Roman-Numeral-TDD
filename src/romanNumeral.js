@@ -19,7 +19,11 @@ function toRoman(number) {
     if (number <= 0) {
         throw new Error('Number must be greater than 0');
     }
-    
+
+    if (number > 3999) {
+        throw new Error('Number must be less than 4000');
+    }
+
     let result = '';
 
     for (const { value, symbol } of romanSymbols) {
