@@ -48,5 +48,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 19 to XIX', () => {
         expect(toRoman(19)).toBe('XIX');
     });
+
+    test('converts 20 to XX', () => {
+        expect(toRoman(20)).toBe('XX');
+    });
 });
 
