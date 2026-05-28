@@ -4,5 +4,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 1 to I', () => {
         expect(toRoman(1)).toBe('I');
     });
+
+    test('converts 2 to II', () => {
+        expect(toRoman(2)).toBe('II');
+    });
 });
 
