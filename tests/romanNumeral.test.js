@@ -96,5 +96,9 @@ describe('Roman Numeral Converter', () => {
     test('throws error for negative numbers', () => {
         expect(() => toRoman(-1)).toThrow();
     });
+
+    test('throws error for numbers greater than 3999', () => {
+        expect(() => toRoman(4000)).toThrow();
+    });
 });
 
