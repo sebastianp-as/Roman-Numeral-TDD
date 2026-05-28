@@ -24,6 +24,10 @@ function toRoman(number) {
         throw new Error('Number must be less than 4000');
     }
 
+    if (!Number.isInteger(number)) {
+        throw new Error('Number must be an integer');
+    }
+
     let result = '';
 
     for (const { value, symbol } of romanSymbols) {
