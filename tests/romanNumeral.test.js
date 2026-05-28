@@ -12,5 +12,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 4 to IV', () => {
         expect(toRoman(4)).toBe('IV');
     });
+
+    test('converts 5 to V', () => {
+        expect(toRoman(5)).toBe('V');
+    });
 });
 
