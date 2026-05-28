@@ -14,6 +14,10 @@ function toRoman(number) {
     if (number > 5 && number < 9 ) {
         return 'V' + 'I'.repeat(number - 5);
     }
+
+    if (number === 9) {
+        return 'IX';
+    }
 }
 
 module.exports = {
