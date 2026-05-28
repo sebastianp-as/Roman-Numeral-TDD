@@ -104,5 +104,9 @@ describe('Roman Numeral Converter', () => {
     test('throws error for decimal numbers', () => {
         expect(() => toRoman(1.5)).toThrow();
     });
+
+    test('converts 944 to CMXLIV', () => {
+        expect(toRoman(944)).toBe('CMXLIV');
+    });
 });
 
