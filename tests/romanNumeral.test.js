@@ -32,5 +32,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 9 to IX', () => {
         expect(toRoman(9)).toBe('IX');
     });
+
+    test('converts 10 to X', () => {
+        expect(toRoman(10)).toBe('X');
+    });
 });
 
