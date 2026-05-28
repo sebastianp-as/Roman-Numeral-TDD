@@ -108,5 +108,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 944 to CMXLIV', () => {
         expect(toRoman(944)).toBe('CMXLIV');
     });
+
+    test('converts 1994 to MCMXCIV', () => {
+        expect(toRoman(1994)).toBe('MCMXCIV');
+    });
 });
 
