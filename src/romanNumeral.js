@@ -14,7 +14,10 @@ const romanSymbols = [
     { value: 1, symbol: 'I' },
 ];
 
-function toRoman(number) {
+function validateNumber(number) {
+    if (!Number.isInteger(number)) {
+        throw new Error('Number must be an integer');
+    }
 
     if (number <= 0) {
         throw new Error('Number must be greater than 0');
@@ -23,10 +26,10 @@ function toRoman(number) {
     if (number > 3999) {
         throw new Error('Number must be less than 4000');
     }
+}
 
-    if (!Number.isInteger(number)) {
-        throw new Error('Number must be an integer');
-    }
+function toRoman(number) {
+    validateNumber(number);
 
     let result = '';
 
