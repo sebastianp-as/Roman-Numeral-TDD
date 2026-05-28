@@ -80,5 +80,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 500 to D', () => {
         expect(toRoman(500)).toBe('D');
     });
+
+    test('converts 900 to CM', () => {
+        expect(toRoman(900)).toBe('CM');
+    });
 });
 
