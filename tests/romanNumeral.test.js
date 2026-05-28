@@ -8,5 +8,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 2 to II', () => {
         expect(toRoman(2)).toBe('II');
     });
+
+    test('converts 4 to IV', () => {
+        expect(toRoman(4)).toBe('IV');
+    });
 });
 
