@@ -92,5 +92,9 @@ describe('Roman Numeral Converter', () => {
     test('throws error for 0', () => {
         expect(() => toRoman(0)).toThrow();
     });
+
+    test('throws error for negative numbers', () => {
+        expect(() => toRoman(-1)).toThrow();
+    });
 });
 
