@@ -100,5 +100,9 @@ describe('Roman Numeral Converter', () => {
     test('throws error for numbers greater than 3999', () => {
         expect(() => toRoman(4000)).toThrow();
     });
+
+    test('throws error for decimal numbers', () => {
+        expect(() => toRoman(1.5)).toThrow();
+    });
 });
 
