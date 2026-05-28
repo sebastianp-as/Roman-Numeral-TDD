@@ -36,5 +36,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 10 to X', () => {
         expect(toRoman(10)).toBe('X');
     });
+
+    test('converts 14 to XIV', () => {
+        expect(toRoman(14)).toBe('XIV');
+    });
 });
 
