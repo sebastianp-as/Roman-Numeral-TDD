@@ -44,5 +44,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 15 to XV', () => {
         expect(toRoman(15)).toBe('XV');
     });
+
+    test('converts 19 to XIX', () => {
+        expect(toRoman(19)).toBe('XIX');
+    });
 });
 
