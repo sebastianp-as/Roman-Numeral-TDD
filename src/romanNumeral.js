@@ -22,6 +22,10 @@ function toRoman(number) {
     if (number === 10) {
         return 'X';
     }
+
+    if (number > 10 && number < 20) {
+        return 'X' + toRoman(number - 10);
+    }
 }
 
 module.exports = {
