@@ -1,4 +1,5 @@
 const romanSymbols = [
+    { value: 90, symbol: 'XC' },
     { value: 50, symbol: 'L' },
     { value: 40, symbol: 'XL' },
     { value: 10, symbol: 'X' },
