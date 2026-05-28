@@ -72,5 +72,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 100 to C', () => {
         expect(toRoman(100)).toBe('C');
     });
+
+    test('converts 400 to CD', () => {
+        expect(toRoman(400)).toBe('CD');
+    });
 });
 
