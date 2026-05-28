@@ -18,6 +18,10 @@ function toRoman(number) {
     if (number === 9) {
         return 'IX';
     }
+
+    if (number === 10) {
+        return 'X';
+    }
 }
 
 module.exports = {
