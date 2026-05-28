@@ -1,4 +1,5 @@
-const romaSymbols = [
+const romanSymbols = [
+    { value: 50, symbol: 'L' },
     { value: 40, symbol: 'XL' },
     { value: 10, symbol: 'X' },
     { value: 9, symbol: 'IX' },
@@ -10,7 +11,7 @@ const romaSymbols = [
 function toRoman(number) {
     let result = '';
 
-    for (const { value, symbol } of romaSymbols) {
+    for (const { value, symbol } of romanSymbols) {
         while (number >= value) {
             result += symbol;
             number -= value;
