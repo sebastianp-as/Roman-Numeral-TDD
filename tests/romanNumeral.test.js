@@ -56,5 +56,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 40 to XL', () => {
         expect(toRoman(40)).toBe('XL');
     });
+
+    test('converts 44 to XLIV', () => {
+        expect(toRoman(44)).toBe('XLIV');
+    });
 });
 
