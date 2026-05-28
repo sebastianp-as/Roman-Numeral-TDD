@@ -24,5 +24,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 7 to VII', () => {
         expect(toRoman(7)).toBe('VII');
     });
+
+    test('converts 8 to VIII', () => {
+        expect(toRoman(8)).toBe('VIII');
+    });
 });
 
