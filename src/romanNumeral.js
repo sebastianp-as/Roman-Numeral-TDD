@@ -1,12 +1,13 @@
+const romanNumbers = {
+    1: 'I',
+    2: 'II',
+    3: 'III',
+    4: 'IV',
+    5: 'V',
+};
+
 function toRoman(number) {
-    if (number === 4) {
-        return 'IV';
-    }
-    if (number === 5) {
-        return 'V';
-    }
-    
-    return 'I'.repeat(number);
+    return romanNumbers[number];
 }
 
 module.exports = {
