@@ -64,5 +64,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 50 to L', () => {
         expect(toRoman(50)).toBe('L');
     });
+
+    test('converts 90 to XC', () => {
+        expect(toRoman(90)).toBe('XC');
+    });
 });
 
