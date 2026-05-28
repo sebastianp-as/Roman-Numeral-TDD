@@ -15,6 +15,11 @@ const romanSymbols = [
 ];
 
 function toRoman(number) {
+
+    if (number <= 0) {
+        throw new Error('Number must be greater than 0');
+    }
+    
     let result = '';
 
     for (const { value, symbol } of romanSymbols) {
