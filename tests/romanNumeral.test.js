@@ -88,5 +88,9 @@ describe('Roman Numeral Converter', () => {
     test('converts 1000 to M', () => {
         expect(toRoman(1000)).toBe('M');
     });
+
+    test('throws error for 0', () => {
+        expect(() => toRoman(0)).toThrow();
+    });
 });
 
