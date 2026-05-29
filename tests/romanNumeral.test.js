@@ -168,5 +168,9 @@ describe('Roman Numeral Converter', () => {
     test('converts XC to 90', () => {
         expect(fromRoman('XC')).toBe(90);
     });
+
+    test('converts CD to 400', () => {
+        expect(fromRoman('CD')).toBe(400);
+    });
 });
 
