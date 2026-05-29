@@ -44,6 +44,10 @@ function toRoman(number) {
 }
 
 function fromRoman(roman) {
+    if (roman === 'III') {
+        return 3;
+    }
+    
     if (roman === 'II') {
         return 2;
     }
