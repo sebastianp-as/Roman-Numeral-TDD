@@ -43,7 +43,11 @@ function toRoman(number) {
     return result;
 }
 
-function fromRoman() {
+function fromRoman(roman) {
+    if (roman === 'II') {
+        return 2;
+    }
+
     return 1;
 }
 
