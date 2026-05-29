@@ -45,23 +45,25 @@ function toRoman(number) {
 
 const romanValues = {
     'I': 1,
-    'II': 2,
-    'III': 3,
-    'IV': 4,
     'V': 5,
-    'IX': 9,
     'X': 10,
-    'XIV': 14,
 }
 
 function fromRoman(roman) {
-    if (romanValues[roman]) {
-        return romanValues[roman];
+    let result = 0;
+
+    for (let i = 0; i < roman.length; i++) {
+        const current = romanValues[roman[i]];
+        const next = romanValues[roman[i + 1]];
+        
+        if (next > current) {
+            result -= current;
+        } else {
+            result += current;
+        }
     }
 
-    if (roman.startsWith('V')) {
-        return 5 + fromRoman(roman.slice(1));
-    }
+    return result;
 }
 
 module.exports = {
