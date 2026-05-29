@@ -140,5 +140,9 @@ describe('Roman Numeral Converter', () => {
     test('converts VI to 6', () => {
         expect(fromRoman('VI')).toBe(6);
     });
+
+    test('converts VII to 7', () => {
+        expect(fromRoman('VII')).toBe(7);
+    });
 });
 
