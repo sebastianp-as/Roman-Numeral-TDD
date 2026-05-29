@@ -152,5 +152,9 @@ describe('Roman Numeral Converter', () => {
     test('converts IX to 9', () => {
         expect(fromRoman('IX')).toBe(9);
     });
+
+    test('converts X to 10', () => {
+        expect(fromRoman('X')).toBe(10);
+    });
 });
 
