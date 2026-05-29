@@ -184,5 +184,9 @@ describe('Roman Numeral Converter', () => {
     test('converts MCMXCIV to 1994', () => {
         expect(fromRoman('MCMXCIV')).toBe(1994);
     });
+
+    test('converts MMMCMXCIX to 3999', () => {
+        expect(fromRoman('MMMCMXCIX')).toBe(3999);
+    });
 });
 
