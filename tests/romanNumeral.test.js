@@ -120,5 +120,9 @@ describe('Roman Numeral Converter', () => {
     test('converts I to 1', () => {
         expect(fromRoman('I')).toBe(1);
     });
+
+    test('converts II to 2', () => {
+        expect(fromRoman('II')).toBe(2);
+    });
 });
 
