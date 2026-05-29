@@ -1,4 +1,4 @@
-const { toRoman } = require('../src/romanNumeral');
+const { toRoman, fromRoman } = require('../src/romanNumeral');
 
 describe('Roman Numeral Converter', () => {
     test('converts 1 to I', () => {
@@ -115,6 +115,10 @@ describe('Roman Numeral Converter', () => {
 
     test('converts 3999 to MMMCMXCIX', () => {
         expect(toRoman(3999)).toBe('MMMCMXCIX');
+    });
+
+    test('converts I to 1', () => {
+        expect(fromRoman('I')).toBe(1);
     });
 });
 
