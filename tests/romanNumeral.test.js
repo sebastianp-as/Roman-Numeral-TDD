@@ -124,5 +124,9 @@ describe('Roman Numeral Converter', () => {
     test('converts II to 2', () => {
         expect(fromRoman('II')).toBe(2);
     });
+
+    test('converts III to 3', () => {
+        expect(fromRoman('III')).toBe(3);
+    });
 });
 
