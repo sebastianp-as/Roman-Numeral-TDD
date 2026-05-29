@@ -164,5 +164,9 @@ describe('Roman Numeral Converter', () => {
     test('converts XLIV to 44', () => {
         expect(fromRoman('XLIV')).toBe(44);
     });
+
+    test('converts XC to 90', () => {
+        expect(fromRoman('XC')).toBe(90);
+    });
 });
 
