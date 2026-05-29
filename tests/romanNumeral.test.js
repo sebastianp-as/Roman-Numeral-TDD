@@ -136,5 +136,9 @@ describe('Roman Numeral Converter', () => {
     test('converts V to 5', () => {
         expect(fromRoman('V')).toBe(5);
     });
+
+    test('converts VI to 6', () => {
+        expect(fromRoman('VI')).toBe(6);
+    });
 });
 
