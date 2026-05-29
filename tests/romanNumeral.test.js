@@ -144,5 +144,9 @@ describe('Roman Numeral Converter', () => {
     test('converts VII to 7', () => {
         expect(fromRoman('VII')).toBe(7);
     });
+
+    test('converts VIII to 8', () => {
+        expect(fromRoman('VIII')).toBe(8);
+    });
 });
 
