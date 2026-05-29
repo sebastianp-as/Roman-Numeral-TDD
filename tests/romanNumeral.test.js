@@ -156,5 +156,9 @@ describe('Roman Numeral Converter', () => {
     test('converts X to 10', () => {
         expect(fromRoman('X')).toBe(10);
     });
+
+    test('converts XIV to 14', () => {
+        expect(fromRoman('XIV')).toBe(14);
+    });
 });
 
