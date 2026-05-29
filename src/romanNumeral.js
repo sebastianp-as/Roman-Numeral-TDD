@@ -52,7 +52,13 @@ const romanValues = {
 }
 
 function fromRoman(roman) {
-    return romanValues[roman];
+    if (romanValues[roman]) {
+        return romanValues[roman];
+    }
+
+    if (roman.startsWith('V')) {
+        return 5 + fromRoman(roman.slice(1));
+    }
 }
 
 module.exports = {
