@@ -172,5 +172,9 @@ describe('Roman Numeral Converter', () => {
     test('converts CD to 400', () => {
         expect(fromRoman('CD')).toBe(400);
     });
+
+    test('converts CM to 900', () => {
+        expect(fromRoman('CM')).toBe(900);
+    });
 });
 
