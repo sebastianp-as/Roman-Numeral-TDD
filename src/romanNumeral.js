@@ -48,6 +48,7 @@ const romanValues = {
     'II': 2,
     'III': 3,
     'IV': 4,
+    'V': 5,
 }
 
 function fromRoman(roman) {
