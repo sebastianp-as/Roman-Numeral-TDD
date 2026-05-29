@@ -50,6 +50,7 @@ const romanValues = {
     'IV': 4,
     'V': 5,
     'IX': 9,
+    'X': 10,
 }
 
 function fromRoman(roman) {
