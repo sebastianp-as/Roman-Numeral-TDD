@@ -43,16 +43,14 @@ function toRoman(number) {
     return result;
 }
 
-function fromRoman(roman) {
-    if (roman === 'III') {
-        return 3;
-    }
-    
-    if (roman === 'II') {
-        return 2;
-    }
+const romanValues = {
+    'I': 1,
+    'II': 2,
+    'III': 3,
+}
 
-    return 1;
+function fromRoman(roman) {
+    return romanValues[roman];
 }
 
 module.exports = {
