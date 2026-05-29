@@ -176,5 +176,9 @@ describe('Roman Numeral Converter', () => {
     test('converts CM to 900', () => {
         expect(fromRoman('CM')).toBe(900);
     });
+
+    test('converts M to 1000', () => {
+        expect(fromRoman('M')).toBe(1000);
+    });
 });
 
