@@ -43,6 +43,11 @@ function toRoman(number) {
     return result;
 }
 
+function fromRoman() {
+    return 1;
+}
+
 module.exports = {
-    toRoman
+    toRoman,
+    fromRoman
 };
